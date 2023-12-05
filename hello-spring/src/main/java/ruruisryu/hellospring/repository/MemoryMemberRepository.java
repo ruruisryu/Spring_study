@@ -1,9 +1,11 @@
 package ruruisryu.hellospring.repository;
 
+import org.springframework.stereotype.Service;
 import ruruisryu.hellospring.domain.Member;
 
 import java.util.*;
 
+@Service
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
